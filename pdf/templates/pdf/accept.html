@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-7">
+          <!-- form -->
+          <form method="POST">
+            {% csrf_token %}
+            <!-- name -->
+            <div class="mb-3">
+              <label for="name" class="form-label"> Name </label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Full Name"
+              />
+            </div>
+
+            <!-- email -->
+            <div class="mb-3">
+              <label for="email" class="form-label"> Email </label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="name@example.com"
+              />
+            </div>
+
+            <!-- phone -->
+            <div class="mb-3">
+              <label for="phone" class="form-label"> Phone </label>
+              <input
+                type="number"
+                class="form-control"
+                id="phone"
+                name="phone"
+                placeholder="Phone Number"
+              />
+            </div>
+
+            <!-- school -->
+            <div class="mb-3">
+              <label for="school" class="form-label"> School </label>
+              <input
+                type="text"
+                class="form-control"
+                id="school"
+                name="school"
+                placeholder="School"
+              />
+            </div>
+
+            <!-- university -->
+            <div class="mb-3">
+              <label for="university" class="form-label"> University </label>
+              <input
+                type="text"
+                class="form-control"
+                id="university"
+                name="university"
+                placeholder="University"
+              />
+            </div>
+
+            <!-- degree -->
+            <div class="mb-3">
+              <label for="degree" class="form-label"> Degree </label>
+              <input
+                type="text"
+                class="form-control"
+                id="degree"
+                name="degree"
+                placeholder="Degree"
+              />
+            </div>
+
+            <!-- previous_work -->
+            <div class="mb-3">
+              <label for="previous_work" class="form-label">
+                Previous Work
+              </label>
+              <textarea
+                class="form-control"
+                id="previous_work"
+                rows="3"
+                name="previous_work"
+                placeholder="Previous Work"
+              ></textarea>
+            </div>
+
+            <!-- skiils -->
+            <div class="mb-3">
+              <label for="skiils" class="form-label"> Skiils </label>
+              <textarea
+                class="form-control"
+                id="skiils"
+                rows="3"
+                name="skills"
+                placeholder="C, C++, JavaScript, Python, SQL and more"
+              ></textarea>
+            </div>
+
+            <!-- summary -->
+            <div class="mb-3">
+              <label for="summary" class="form-label"> About You </label>
+              <textarea
+                class="form-control"
+                id="summary"
+                rows="3"
+                name="summary"
+                placeholder="Write about you..."
+              ></textarea>
+            </div>
+
+            <input type="submit" value="Submit" class="btn btn-primary" />
+          </form>
+          <!-- end form -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
